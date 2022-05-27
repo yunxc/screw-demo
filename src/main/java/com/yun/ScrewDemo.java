@@ -29,9 +29,9 @@ public class ScrewDemo {
         //数据源
         HikariConfig hikariConfig = new HikariConfig();
         hikariConfig.setDriverClassName("oracle.jdbc.OracleDriver");
-        hikariConfig.setJdbcUrl("jdbc:oracle:thin:@172.16.3.87:1521/hdctest");
-        hikariConfig.setUsername("DATACENTER");
-        hikariConfig.setPassword("DATACENTER_1Qaz");
+        hikariConfig.setJdbcUrl("jdbc:oracle:thin:@127.0.0.1:1521/hdctest");
+        hikariConfig.setUsername("xxxxxx");
+        hikariConfig.setPassword("xxxxxx");
         //设置可以获取tables remarks信息
         hikariConfig.addDataSourceProperty("useInformationSchema", "true");
         hikariConfig.setMinimumIdle(2);
